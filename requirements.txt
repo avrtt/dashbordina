@@ -1,0 +1,17 @@
+dash==2.10.0
+dash-bootstrap-components==1.4.1
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+flask==2.2.3
+flask-caching==2.0.2
+pandas==2.0.3
+plotly==5.14.1
+fastapi==0.95.2
+uvicorn==0.22.0
+sqlalchemy<2.0
+psycopg2-binary==2.9.6
+pytest==7.3.1
+pytest-dash==2.1.2
+pytest-xdist==3.3.1
+pytest-mock==3.10.0
+pytest-cov==4.1.0 

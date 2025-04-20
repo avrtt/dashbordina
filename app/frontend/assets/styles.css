@@ -1,0 +1,114 @@
+/* Dark theme colors */
+:root {
+  --dark-bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --accent-blue: #1976D2;
+  --accent-green: #2E7D32;
+  --accent-red: #C62828;
+  --accent-yellow: #F9A825;
+  --grid-color: #333333;
+  --hover-bg: #303030;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Fix Dash DatePickerRange styling in dark mode */
+.DateInput_input, .DateInput_input_1 {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+.DateRangePickerInput__withBorder {
+  border: 1px solid var(--grid-color);
+  border-radius: 4px;
+  background-color: var(--card-bg);
+}
+
+.DateRangePickerInput_arrow {
+  color: var(--text-color);
+}
+
+/* Fix Dropdown styling in dark mode */
+.Select-control {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--grid-color) !important;
+}
+
+.Select-menu-outer {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--grid-color) !important;
+}
+
+.Select-menu {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.Select-option {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.Select-option:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+  color: var(--text-color) !important;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* KPI cards styling */
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* Positive/negative value styling */
+.positive-change {
+  color: var(--accent-green);
+}
+
+.negative-change {
+  color: var(--accent-red);
+}
+
+/* Tooltip styling */
+.dash-tooltip {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--grid-color) !important;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 300px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.75rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+} 
